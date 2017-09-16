@@ -3,36 +3,53 @@
 % usual packages loading:
 \usepackage{fontspec}
 \usepackage{graphicx} % support the \includegraphics command and options
-\usepackage{gregoriotex} % for gregorio score inclusion
-\usepackage[cm]{fullpage} % to reduce the margins
+\usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
+%\usepackage[cm]{fullpage} % to reduce the margins
 \usepackage{libertine} % Decent (free) font for Gregorian, but should be changed if you have high standards
+\usepackage[margin=2cm]{geometry}
 
 \begin{document}
 
-\gresetcompilegabc{auto}
 
 \begin{center}
 
-{\huge \scshape Catena}
+{\huge \scshape Catena Legionis}
 
-Daily prayer of the Legion of Mary
+Part of the daily prayers of members of the Legion of Mary.
+
+Here arranged with music from the Liber Usualis.
 
 \end{center}
 
-\gregorioscore{co--quae_est_ista--vatican}
+\gregorioscore{co--quae_est_ista--vatican-init}
+
+\bigskip
 
 \gregorioscore{magnificat-8G}
 
+\bigskip
+
+
 \gregorioscore{co--quae_est_ista--vatican}
+
+\bigskip
+
 
 \gregorioscore{versicle-maria-sine}
 
+\bigskip
 
-Oremus 
 
-Dómine Jesu Christe, noster apud Patrem mediátor, qui beatíssimam Vírginem matrem tuam, matrem quoque nostram et apud te mediatrícem constitúere dignátus es: concéde propítius; ut quisquis ad te benefícia petitúrus accésserit, cuncta se per eam impetrásse laetétur.
-Qui vivis et regnas cum Deo Patre in unitate Spíritus Sancti, 
-Deus, per ómnia sǽcula sæculórum. Amen. 
+\gregorioscore{oremus}
 
+\bigskip
+
+
+\gregorioscore{collect}
+
+%Oremus 
+
+%Dómine Jesu Christe, noster apud Patrem mediátor, qui beatíssimam Vírginem matrem tuam, matrem quoque nostram et apud te mediatrícem constitúere dignátus es: \dagger\ concéde propítius; ut quisquis ad te benefícia petitúrus accésserit, * cuncta se per eam impetrásse laetétur.
+%Amen.
 
 \end{document}
